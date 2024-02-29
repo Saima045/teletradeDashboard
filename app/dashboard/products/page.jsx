@@ -18,7 +18,7 @@ const page = async() => {
                             <div><b>Owner:</b>{item?.user?.name}</div>   
                             <div>
                                 <form action={deleteProduct}>
-                                    <input type="hidden" value={item?._id.toString()} name="user_id" id="" />
+                                    <input type="hidden" value={item?._id.toString()} name="prod_id" id="" />
                                     <button className='bg-blue-500 px-4 py-2 text-white rounded-md mx-3'>
                                         Delete
                                     </button>
