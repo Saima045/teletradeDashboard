@@ -27,7 +27,7 @@ export const fetchData = async () => {
           };
   
           // Return categories data along with headers
-          return { data: categories, headers };
+          return { categories, headers };
       } catch (error) {
           // Handle errors if any
           throw new Error("Failed to fetch categories: " + error.message);
