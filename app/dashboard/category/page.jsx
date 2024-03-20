@@ -104,7 +104,8 @@ import Link from 'next/link'
 // }
 
 const page = async() => {
-    const categories= await fetchData()
+   // const categories= await fetchData()
+   const { data: categories } = await fetchData();
   //  console.log(categories)
   return (
     <> 
