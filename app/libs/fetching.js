@@ -7,7 +7,8 @@ const { Category } = require("./categoryModel")
 export const fetchData = async () => {
   //  const pattern = new RegExp(q, 'i')
     await connectDB()
-    const categories = await Category.find();
+   // const categories = await Category.find();
+   const categories = await Category.find().lean();
     return categories
 }
 
